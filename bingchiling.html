@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingchiling - Kem cam vàng mát lạnh</title>
+    <link rel="icon" href="logobingweb.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&subset=vietnamese&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bingchiling.css?v=6">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Điều hướng chính">
+            <a class="brand" href="#home" aria-label="Bingchiling trang chủ">
+                <span class="brand-mark">
+                    <img src="logobingweb.png" alt="Logo Bingchiling">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">Bingchiling</span>
+                    <span class="brand-tagline">Kem tươi & trà sữa</span>
+                </span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#uu-dai">Ưu đãi</a>
+                <a href="#dat-mon">Đặt món</a>
+                <a href="#lien-he">Liên hệ</a>
+            </div>
+
+            <div class="cart-area">
+                <button class="cart-pill" type="button" id="cartButton" aria-expanded="false" aria-controls="cartPanel">Gi&#7887; h&#224;ng (0)</button>
+                <div class="cart-popover" id="cartPanel" aria-label="Gi&#7887; h&#224;ng c&#7911;a b&#7841;n">
+                    <div class="cart-popover-head">
+                        <strong>Gi&#7887; h&#224;ng c&#7911;a b&#7841;n</strong>
+                        <span id="cartSummary">0 m&#243;n</span>
+                    </div>
+                    <div class="cart-items" id="cartItems">
+                        <p class="cart-empty">Ch&#432;a c&#243; m&#243;n n&#224;o trong gi&#7887; h&#224;ng.</p>
+                    </div>
+                    <button class="btn btn-primary cart-checkout-btn" type="button" id="cartCheckoutButton" hidden>
+                        &#272;&#7863;t m&#243;n
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+            <div>
+                <span class="eyebrow">Kem tươi mỗi ngày - giao nhanh trong 30 phút</span>
+                <h1 id="hero-title">Bingchiling <span class="gradient-text">mát lạnh</span></h1>
+                <p class="hero-copy">
+                    Cửa hàng kem tông cam chuyển vàng với những vị kem béo mịn, trái cây nhiệt đới
+                    và topping giòn vui. Chọn món, thêm topping và đặt giao tận nhà.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#menu">Xem menu</a>
+                    <a class="btn btn-secondary" href="#dat-mon">Đặt ngay</a>
+                </div>
+
+                <div class="hero-stats" aria-label="Thông tin nổi bật">
+                    <div class="stat">
+                        <strong>18+</strong>
+                        <span>vị kem và topping mỗi tuần</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9</strong>
+                        <span>đánh giá từ khách hàng</span>
+                    </div>
+                    <div class="stat">
+                        <strong>30'</strong>
+                        <span>giao nội thành siêu nhanh</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Hình ảnh kem Bingchiling">
+                <div class="photo-stack best-seller-stack">
+                    <img src="z7775743297126_5626f360c24f99b6423f66c1a97cb578.jpg" alt="Poster best seller Bingchiling">
+                </div>
+                <div class="floating-card">
+                    <strong>Best seller: Trà sữa Bingchiling</strong>
+                    <span>Trà sữa nha đam, sen vàng, nữ hoàng và trân châu đường đen mát lạnh mỗi ngày.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="menu" aria-labelledby="menu-title">
+            <div class="section-head">
+                <h2 class="section-title" id="menu-title">Menu món kem</h2>
+                <p class="section-note">
+                    Bảng màu cam-vàng được giữ xuyên suốt, còn menu chia rõ món ly, ốc quế,
+                    sundae và đồ uống kem để khách chọn nhanh.
+                </p>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747790995_0a9ed42919d6f457cd65de9582289b65.jpg" alt="Ly trà sữa Bingchiling kem tươi">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Kem Xoài Sữa Dừa</h3>
+                            <span class="price">49K</span>
+                        </div>
+                        <p>Hai viên kem xoài-vani, sốt xoài vàng và dừa sấy giòn.</p>
+                        <div class="tag-row">
+                            <span class="tag">Bán chạy</span>
+                            <span class="tag">Nhiệt đới</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Kem Xoài Sữa Dừa">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747799289_f94321c5566da4999719e98096c80c46.jpg" alt="Ly trà trái cây cam vàng Bingchiling">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Vani Cốm Mùa Hè</h3>
+                            <span class="price">39K</span>
+                        </div>
+                        <p>Kem vani sữa tươi, cốm màu, bánh waffle và một lớp mật ong vàng.</p>
+                        <div class="tag-row">
+                            <span class="tag">Béo mịn</span>
+                            <span class="tag">Trẻ em thích</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Vani Cốm Mùa Hè">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747803451_565f12a11c05392e195f67ad336c28e1.jpg" alt="Ly xoài sữa Bingchiling">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Chocolate Cookies</h3>
+                            <span class="price">45K</span>
+                        </div>
+                        <p>Kem cacao đậm, cookies nghiền, sốt chocolate và hạt hạnh nhân.</p>
+                        <div class="tag-row">
+                            <span class="tag">Đậm vị</span>
+                            <span class="tag">Giòn</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Chocolate Cookies">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747810315_1409cd9f9bb0462c48612f6b7541e1ab.jpg" alt="Ly trà sữa trân châu đường đen Bingchiling">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Sundae Bingchiling</h3>
+                            <span class="price">59K</span>
+                        </div>
+                        <p>Ly sundae lớn với ba viên kem, chuối, dâu tây, caramel và kem tươi.</p>
+                        <div class="tag-row">
+                            <span class="tag">Ly lớn</span>
+                            <span class="tag">Topping đầy</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Sundae Bingchiling">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747815115_14526dd2541cb014f0b89c95748f9948.jpg" alt="Ly dâu sữa kem tươi Bingchiling">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Ốc Quế 3 Vị</h3>
+                            <span class="price">52K</span>
+                        </div>
+                        <p>Chọn 3 vị bất kỳ, phủ sốt cam vàng và topping hạt kẹo rang.</p>
+                        <div class="tag-row">
+                            <span class="tag">Tùy chọn</span>
+                            <span class="tag">Ốc quế</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Ốc Quế 3 Vị">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-image">
+                        <img src="menu/z7775747816742_21c34938b61b4396785ea1802ead2e73.jpg" alt="Ly trà sữa trân châu Bingchiling">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-top">
+                            <h3>Hộp Gia Đình</h3>
+                            <span class="price">169K</span>
+                        </div>
+                        <p>Bốn vị kem theo mùa, 6 loại topping và sốt riêng cho nhóm bạn.</p>
+                        <div class="tag-row">
+                            <span class="tag">Tiết kiệm</span>
+                            <span class="tag">4-6 người</span>
+                        </div>
+                        <button class="add-btn" type="button" data-name="Hộp Gia Đình">Th&#234;m v&#224;o gi&#7887;</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-actions">
+                <button class="btn btn-secondary menu-more-btn" type="button" id="menuMoreButton" aria-expanded="false" aria-controls="menuGrid">
+                    Xem th&ecirc;m menu
+                </button>
+            </div>
+        </section>
+
+        <section class="feature-band" id="uu-dai" aria-labelledby="feature-title">
+            <h2 class="sr-only" id="feature-title">Ưu đãi Bingchiling</h2>
+            <div class="feature-inner">
+                <div class="feature">
+                    <span class="feature-icon" aria-hidden="true">%</span>
+                    <h3>Combo giờ vàng</h3>
+                    <p>Giảm 15% cho đơn từ 2 món trong khung 14:00 - 17:00 mỗi ngày.</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon" aria-hidden="true">*</span>
+                    <h3>Topping miễn phí</h3>
+                    <p>Mỗi ly kem được chọn một topping miễn phí: cốm màu, dừa sấy hoặc cookie.</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon" aria-hidden="true">+</span>
+                    <h3>Thẻ thành viên</h3>
+                    <p>Tích 10 tem đổi 1 ly kem bất kỳ và nhận ưu đãi sinh nhật.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="dat-mon" aria-labelledby="order-title">
+            <div class="order-wrap">
+                <aside class="contact-panel" id="lien-he">
+                    <h2>Ghé Bingchiling</h2>
+                    <p>
+                        Không gian cam-vàng tươi sáng, quầy topping mở và khu check-in riêng cho
+                        những ly kem vừa làm xong.
+                    </p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <span>1</span>
+                            <span>12 Nguyễn Trãi, Quận 1, TP.HCM</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>2</span>
+                            <span>Hotline: 0909 888 686</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>3</span>
+                            <span>Mở cửa: 09:00 - 22:30 mỗi ngày</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <form class="order-panel" aria-labelledby="order-title">
+                    <h2 id="order-title">Đặt món nhanh</h2>
+                    <p>Nhập thông tin, Bingchiling sẽ gọi xác nhận đơn và giao kem trong thùng giữ lạnh.</p>
+                    <div class="form-grid">
+                        <label>
+                            Họ tên
+                            <input type="text" name="name" placeholder="Tên của bạn" required>
+                        </label>
+                        <label>
+                            Số điện thoại
+                            <input type="tel" name="phone" placeholder="090..." required>
+                        </label>
+                        <label>
+                            Chọn món
+                            <select name="item" required>
+                                <option value="">Chọn món yêu thích</option>
+                                <option>Kem Xoài Sữa Dừa</option>
+                                <option>Vani Cốm Mùa Hè</option>
+                                <option>Chocolate Cookies</option>
+                                <option>Sundae Bingchiling</option>
+                                <option>Ốc Quế 3 Vị</option>
+                                <option>Hộp Gia Đình</option>
+                            </select>
+                        </label>
+                        <label>
+                            Số lượng
+                            <input type="number" name="quantity" min="1" value="1" required>
+                        </label>
+                        <label class="full">
+                            Địa chỉ giao hàng
+                            <textarea name="address" placeholder="Nhập địa chỉ và ghi chú topping"></textarea>
+                        </label>
+                        <button class="btn btn-primary full" type="submit">Gửi đơn hàng</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <strong>Bingchiling</strong>
+            <span>Làm kem tươi mỗi ngày với tông cam chuyển vàng.</span>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="assets/js/bing.js?v=6" charset="UTF-8"></script>
+
+</body>
+</html>
