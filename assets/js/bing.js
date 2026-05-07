@@ -65,7 +65,7 @@ const extraMenuItems = [
     "z7775748076732_f0f59eb3510b44a59ab11d4b096a2a97.jpg",
 ].map((image, index) => ({
     name: `Món Bingchiling ${String(index + 7).padStart(2, "0")}`,
-    image: `menu/${image}`,
+    image: `assets/menu/${image}`,
 }));
 
 function getCartCount() {
