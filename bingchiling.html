@@ -23,26 +23,34 @@
                 </span>
             </a>
 
-            <div class="nav-links">
-                <a href="#menu">Menu</a>
-                <a href="#uu-dai">Ưu đãi</a>
-                <a href="#dat-mon">Đặt món</a>
-                <a href="#lien-he">Liên hệ</a>
-            </div>
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <div class="cart-area">
-                <button class="cart-pill" type="button" id="cartButton" aria-expanded="false" aria-controls="cartPanel">Gi&#7887; h&#224;ng (0)</button>
-                <div class="cart-popover" id="cartPanel" aria-label="Gi&#7887; h&#224;ng c&#7911;a b&#7841;n">
-                    <div class="cart-popover-head">
-                        <strong>Gi&#7887; h&#224;ng c&#7911;a b&#7841;n</strong>
-                        <span id="cartSummary">0 m&#243;n</span>
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-links">
+                    <a href="#menu">Menu</a>
+                    <a href="#uu-dai">Ưu đãi</a>
+                    <a href="#dat-mon">Đặt món</a>
+                    <a href="#lien-he">Liên hệ</a>
+                </div>
+
+                <div class="cart-area">
+                    <button class="cart-pill" type="button" id="cartButton" aria-expanded="false" aria-controls="cartPanel">Gi&#7887; h&#224;ng (0)</button>
+                    <div class="cart-popover" id="cartPanel" aria-label="Gi&#7887; h&#224;ng c&#7911;a b&#7841;n">
+                        <div class="cart-popover-head">
+                            <strong>Gi&#7887; h&#224;ng c&#7911;a b&#7841;n</strong>
+                            <span id="cartSummary">0 m&#243;n</span>
+                        </div>
+                        <div class="cart-items" id="cartItems">
+                            <p class="cart-empty">Ch&#432;a c&#243; m&#243;n n&#224;o trong gi&#7887; h&#224;ng.</p>
+                        </div>
+                        <button class="btn btn-primary cart-checkout-btn" type="button" id="cartCheckoutButton" hidden>
+                            &#272;&#7863;t m&#243;n
+                        </button>
                     </div>
-                    <div class="cart-items" id="cartItems">
-                        <p class="cart-empty">Ch&#432;a c&#243; m&#243;n n&#224;o trong gi&#7887; h&#224;ng.</p>
-                    </div>
-                    <button class="btn btn-primary cart-checkout-btn" type="button" id="cartCheckoutButton" hidden>
-                        &#272;&#7863;t m&#243;n
-                    </button>
                 </div>
             </div>
         </nav>

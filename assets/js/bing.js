@@ -10,6 +10,11 @@ const menuMoreButton = document.getElementById("menuMoreButton");
 const orderSelect = form?.querySelector('select[name="item"]');
 const orderQuantityInput = form?.querySelector('input[name="quantity"]');
 
+// Hamburger menu elements
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navMenu = document.getElementById("navMenu");
+const navLinks = document.querySelectorAll(".nav-links a");
+
 const cart = new Map();
 let toastTimer;
 let menuExpanded = false;
@@ -287,6 +292,40 @@ document.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         toggleCartPanel(false);
+    }
+});
+
+// Hamburger menu toggle
+function toggleHamburgerMenu(force) {
+    const isOpen = force !== undefined ? force : !navMenu.classList.contains("open");
+    navMenu.classList.toggle("open", isOpen);
+    hamburgerBtn.setAttribute("aria-expanded", isOpen);
+}
+
+hamburgerBtn.addEventListener("click", () => {
+    toggleHamburgerMenu();
+});
+
+// Close menu when clicking on a nav link
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        toggleHamburgerMenu(false);
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+    const clickedInsideMenu = navMenu.contains(event.target) || hamburgerBtn.contains(event.target);
+    
+    if (!clickedInsideMenu && navMenu.classList.contains("open")) {
+        toggleHamburgerMenu(false);
+    }
+});
+
+// Close menu on Escape key
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navMenu.classList.contains("open")) {
+        toggleHamburgerMenu(false);
     }
 });
 
