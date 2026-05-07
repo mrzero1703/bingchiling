@@ -45,7 +45,7 @@
             position: sticky;
             top: 0;
             z-index: 20;
-            background: rgba(255, 250, 232, 0.88);
+            background: rgba(255, 250, 232, 0.7);
             backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--line);
         }
@@ -53,7 +53,7 @@
         .nav {
             position: relative;
             width: min(1120px, calc(100% - 32px));
-            min-height: 76px;
+            min-height: 60px;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -142,7 +142,7 @@
         .hamburger-btn {
             display: none;
             flex-direction: column;
-            gap: 6px;
+            gap: 8.5px;
             background: none;
             border: none;
             cursor: pointer;
@@ -174,7 +174,8 @@
         .nav-menu {
             display: flex;
             align-items: center;
-            gap: 24px;
+            justify-content: flex-end;
+            gap: 70px;
             flex: 1;
         }
 
@@ -369,6 +370,7 @@
 
         .btn-primary {
             color: #fff;
+            font-family: unset;
             background: linear-gradient(135deg, var(--orange-deep), var(--orange) 52%, #ffbf2f);
             box-shadow: 0 15px 32px rgba(232, 86, 17, 0.3);
         }
@@ -542,6 +544,7 @@
             min-height: 100%;
             border-radius: 8px;
             overflow: hidden;
+            box-shadow: #0000 0px 12px 30px;
             background: rgba(255, 255, 255, 0.74);
             border: 1px solid var(--line);
             box-shadow: 0 12px 30px rgba(184, 80, 13, 0.12);
@@ -617,6 +620,7 @@
             background: var(--ink);
             color: #fff;
             font-weight: 900;
+            font-family: unset;
             cursor: pointer;
         }
 
